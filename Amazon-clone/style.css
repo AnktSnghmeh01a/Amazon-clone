@@ -1,0 +1,855 @@
+/* CSS RESET */
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+
+
+body{
+  position: relative;
+}
+
+/* movable cursor */
+
+
+.cursor-ball{
+  height: 6em;
+  width: 6em;
+  background-color:  #f8d10b7e;
+  pointer-events: auto;
+  /* z-index: 999; */
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+  position: fixed;
+}
+
+
+/* Styling the navbar */
+.navbar-part{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 8.6vw;
+  font-family: "poppins";
+  position: relative;
+  z-index: 500;
+}
+
+/* fix the upper nav */
+.upper-nav-part{
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #010101;
+  padding: 0.5vw 0.8vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+ z-index: 999;
+}
+/* styling the logo nav */
+.logo-div-navbar{
+  width: 6.9em;
+  height: 3.5em;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+  border: 1px solid transparent;
+
+}
+
+/* styling the amazon image */
+.logo-div-navbar img{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+/* second div text portion */
+.second-div-text-portion-upper-div{
+  display: flex;
+  align-items: center;
+  height: 3.2em;
+  padding: 0em 1.3em;
+  padding-bottom: 1em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  z-index: 100;
+}
+
+
+/* location icon */
+.second-div-text-portion-upper-div i{
+  position: absolute;
+  color: #f1f1f1;
+  top: 33%;
+  left: 9.4%;
+  font-size: 1em;
+}
+
+.second-div-text-portion-upper-div  .text-part-inner
+p {
+  color: #f1f1f1;
+  font-size: 0.82em;
+  z-index: 100;
+}
+
+.second-div-text-portion-upper-div .text-part-inner
+h3 {
+  color: #f1f1f1;
+  font-size: 0.9em;
+  line-height: 0.2em;
+  /* border: 1px solid red; */
+}
+
+
+/* topdown options */
+.top-down-navbar-options-all{ 
+  height: 3.1em;
+  width: 3.7em;
+  border: none;
+  background-color: #D4D4D4; 
+  overflow: scroll;
+  
+}
+
+.top-down-navbar-options-all option:nth-child(1){
+  padding-left: 12px;
+  text-align: center;
+
+}
+
+/* styling the middle div */
+.middle-div-navbar-portion
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 0.3em;
+  overflow: hidden;
+  margin-left: 1.7em;
+  margin-right: 2.7em;
+
+}
+
+.input-bar-top-amazon-in {
+
+  width: 37vw;
+  height: 3.1em;
+  border: none;
+  padding-left: 0.6em;
+  z-index: 100;
+}
+
+.input-bar-top-amazon-in:focus-within{
+
+  outline: none;
+  z-index: 100;
+}
+
+::placeholder{
+  color: #6F7373;
+}
+
+.search-icon-input-bar{
+
+  background-color: #F3A847;
+  width: 3em;
+  border: none;
+  height: 2.6em;
+}
+
+/* search-icon */
+.search-icon-input-bar i{
+
+  color: #1414148a;
+  font-size: 1.5em;
+  padding-top: 0.3em;
+  padding-left: 0.4em;
+}
+
+
+/* right navbar portion */
+
+.right-navbar-portion {
+  display: flex;
+  align-items: center;
+  color: #D4D4D4;
+}
+
+/* flag portion*/
+.flag-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  padding: 0.6em ;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.flag-part h3{
+  color: #F8F4F8;
+}
+
+.fa-arrows-down-to-line{
+  font-size: 0.7em;
+  padding-top: 0.3em;
+}
+
+/* right text nav portion */
+.right-text-navbar-portion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0.9em;
+  cursor: pointer;
+  padding: 0.6em ;
+  border: 1px solid transparent;
+}
+
+.right-text-navbar-portion p{
+  color: #e9e6e9;
+  font-size: 0.8em;
+}
+
+.right-navbar-portion h2{
+  font-size: 0.9em;
+  color: #F8F4F8;
+}
+
+/* cart portion */
+
+.right-part-cart-portion{
+  display: flex;
+  cursor: pointer;
+  padding: 0.7em;
+  border: 1px solid transparent;
+}
+
+.right-part-cart-portion i{
+ font-size: 1.7em;
+ color: #F8F4F8;
+
+}
+
+.right-part-cart-portion h1{
+  font-size: 0.8em;
+  padding-top: 0.7em;
+}
+
+/* when hover , we get the background color */
+
+
+.logo-div-navbar:hover,.second-div-text-portion-upper-div:hover ,.flag-part:hover ,.right-text-navbar-portion:hover ,.right-part-cart-portion:hover,.left-lower-portion-navbar p:hover,.right-lower-portion-navbar p:hover{
+  
+  border: 1px solid #F8F4F8;
+  transition: 0.12s linear;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/* styling the lower part of the navbar */
+.lower-nav-portion{
+  display: flex;
+  justify-content:space-between;
+  padding: 0.2em 0.5em;
+  align-items:center;
+  min-width: 100%;
+  background-color: #232F3E;
+  color: #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  height: 3.5vw;
+}
+
+.left-lower-portion-navbar{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 70%; */
+}
+
+.first-part-left-lower-portion-navbar{
+  display: flex;
+  align-items: center;
+}
+
+.first-part-left-lower-portion-navbar i{
+  cursor: pointer;
+  padding: 0.3em 0.3em;
+}
+.left-lower-portion-navbar p{
+  font-size: 0.87em;
+  font-weight: 500;
+  padding: 0.5em 0.5em;
+  border: 1px solid transparent;
+}
+.last-part-left-lower-portion{
+  display: flex;
+  align-items: center;
+}
+
+.last-part-left-lower-portion i{
+  cursor: pointer;
+  padding: 0.3em 0.3em;
+
+}
+
+.right-lower-portion-navbar p{
+  font-size: 0.87em; 
+  padding: 0.5em 0.5em;
+  border: 1px solid transparent;
+}
+
+
+
+/* Styling the hero section */
+
+/* Styling the hero section */
+
+/* Styling the hero section */
+
+/* Styling the hero section */
+
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height:120vh;
+  /* border: 2px solid red; */
+  font-family: "poppins";
+  background-image: url("/crousel-images/amazon-crosel-image-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* focus on carousel arrows */
+
+.carosel-arrows{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  z-index: 100;
+}
+/* styling the left carousel arrow */
+.left-carosel-arrows i{
+  font-size: 3em;
+  color: #D4D4D4;
+}
+.left-carosel-arrows {
+  border: 1.8px solid transparent;
+  padding: 6em 1em;
+  cursor: pointer;
+}
+/* styling the right carosel arrow */
+
+.right-carosel-arrows {
+  border: 1.8px solid transparent;
+  padding: 6em 1em;
+  cursor: pointer;
+}
+.right-carosel-arrows i{
+  font-size: 3em;
+  color: #D4D4D4;
+}
+
+
+/* styling the lower- hero section */
+
+.lower-part-hero-section{
+  display: flex;
+  width: 100%;
+  gap: 1.5em;
+  padding: 0 1.5vw;
+}
+/* styling the inner div */
+.lower-part-inner-div-hero{
+  display: flex;
+  flex-direction: column;
+  height: 26em;
+  width: 20em;
+  /* border: 1px solid red; */
+  background-color: #FFFFFF;
+  padding: 1em 0.2em;
+}
+/* styling the h1 present in a inner div */
+.lower-part-inner-div-hero h1{
+  font-size: 1.3em;
+  padding: 0.3em ;
+}
+/* styling the fourth div */
+.lower-part-fourth-div-inner-hero
+{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width:20em;
+  gap: 2em;
+}
+
+/* styling the p present in a inner div */
+.lower-part-inner-div-hero p{
+ font-size: 0.8em;
+/* border: 1px solid red; */
+margin: 0.6em auto;
+float: center;
+cursor: pointer;
+}
+
+/* styling paragraph present in a div's */
+.lower-part-inner-div-hero p:hover{
+  color: #14fff3;
+}
+
+/* styling the upper part of fourth div*/
+
+.upper-div-fourth-div-inner-hero{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  padding: 1em ;
+  background-color: #FFFFFF;
+
+}
+
+/* sign in block */
+.upper-div-fourth-div-inner-hero h1{
+  font-size: 1.4em;
+  padding: 0.4em 0.7em;
+  line-height: 0.4em;
+}
+
+/* styling the button */
+
+.upper-div-fourth-div-inner-hero button{
+  padding: 0.7em ;
+  width: 18em;
+  border: none;
+  border-radius: 2em;
+  margin: 1.5em auto;
+  background-color:#FFD814;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* applying hover on a button */
+.upper-div-fourth-div-inner-hero button:hover{
+  background-color:#f8d10b;
+
+}
+
+/* image block fourth */
+
+.lower-div-fourth-div-inner-hero{
+  /* border: 1px solid red; */
+  height: 14em;
+  /* width: 100%; */
+
+}
+/* img */
+.lower-div-fourth-div-inner-hero img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+/* image container that contain all the images */
+
+.image-container-all-images{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  padding: 0 0.5em;
+}
+
+
+/* styling inner images blocks */
+.image-blocks-lower-part{
+  height: 8em;
+  width: 8em;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.image-blocks-lower-part img{
+  height: 5em;
+  /* width: 100%; */
+}
+.image-blocks-lower-part p{
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+
+/* stying the third div(starting 99) */
+
+.third-div-image-container-all-images{
+  margin-top: 1.9em;
+}
+
+/* ========================== */
+/* ============================ */
+/* ===== styling the page 1 =======*/
+/* =========================== */
+/* ========================== */
+
+.page1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 120vh;
+  font-family: "poppins";
+  background-color: #E3E6E6;
+}
+/* second row */
+.second-row-page1{
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* border: 1px solid red; */
+  min-height: 25vw;
+  padding:1em 1em ;
+  margin: 2em 1.88em;
+  background-color: #d4d4d470;
+  position: relative;
+}
+/* text portion */
+.text-block-second-row-page1{
+  display: flex;
+  width: 100%;
+  gap: 1.2em;
+}
+/* heading */
+.text-block-second-row-page1 h1{
+  font-size: 1.3em;
+  font-weight: 590;
+}
+
+/* paragraph */
+
+.text-block-second-row-page1  p{
+  font-size: 0.9em;
+   color: #0a9b94;
+   align-self: center;
+}
+
+/* appplying properties to the container --> that contain images */
+
+.all-divs-container-page1{
+  display: flex;
+  overflow-x: hidden;
+  padding:1em 0em;
+  gap: 1em;
+
+}
+
+/* stying each of the div */
+
+.inner-container-page1-div{
+  height: 17em;
+  width: 15em;
+  gap: 0.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.inner-container-page1-div p{
+  font-size: 1em;
+  padding: 0.1em 1.5em;
+  background-color: #CC0C39;
+  color: #f1f1f1;
+}
+
+.inner-container-page1-div h4{
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.image-div-inner-container-page1{
+  width: 15em;
+  height: 14em;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.image-div-inner-container-page1 img{
+ padding: 0.5em 0;
+}
+
+/* styling slider arrows */
+
+.slider-arrows
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 33%;
+  z-index: 100;
+}
+.left-slider-arrows,.right-slider-arrows{
+  padding: 1.1em 0.4em;
+  margin-right: 0.8em;
+  background-color: #e3e6e6c9;
+  cursor: pointer;
+  border-radius: 0.2em;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.left-slider-arrows,.right-slider-arrows{
+  font-size: 2em;
+}
+
+
+/* footer section */
+
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* min-height: 100vw; */
+  font-family: "poppins";
+}
+
+
+/* styling first row */
+
+.first-row-footer-section{
+  background-color: #485769;
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+
+.first-row-footer-section p{
+  font-size: 0.8em;
+ padding: 1.3em 0;
+
+
+}
+
+.first-row-footer-section p:hover{
+  z-index: 100;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+/* Styling the second row */
+
+.second-row-footer-section
+{
+  width: 100%;
+  display: flex;
+  padding-left: 6em;
+  background-color: #232F3E;
+}
+
+/* styling inner block */
+.inner-div-second-row-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 2.8em 0;
+  /* border: 1px solid red; */
+}
+
+/* styling the h1 */
+
+.inner-div-second-row-footer h1{
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  align-self: flex-start;
+  cursor: pointer;
+  z-index: 100;
+
+}
+.inner-div-second-row-footer h1:hover{
+  text-decoration: underline;
+}
+/* styling the p */
+
+.inner-div-second-row-footer p{
+  z-index: 100;
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+  transition: 0.2s linear;
+  align-self: flex-start;
+  color: #f1f1f1c5;
+
+
+}
+.inner-div-second-row-footer p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #f1f1f1;
+}
+
+
+/* Styling the third row */
+
+
+.third-row-footer-section{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color:#233448;
+  color: #f1f1f1;
+  height: 5em;
+}
+
+.amazon-logo-block{
+  height: 3em;
+  width: 6em;
+  margin-right: 4em;
+}
+
+.amazon-logo-block img{
+width: 100%;
+height: 100%;
+background-position: center;
+}
+
+.language-block-third-row-footer-section {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1em 1em;
+ border: 0.8px solid #D4D4D4;
+ height: 2.8em;
+ width: 8.6em;
+ gap: 0.4em;
+ font-size: 0.8em;
+ color: #f1f1f1cc;
+}
+
+.language-block-third-row-footer-section i{
+  padding-left: 0.8em;
+}
+
+/* Styling the fourth row */
+
+
+
+.fourth-row-footer-section{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-size: 1em;
+  width:100%;
+  height: 5vw;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 10em;
+  background-color:#233448;
+}
+
+
+
+.fourth-row-footer-section p{
+  font-size: 0.8em;
+  color: #f1f1f1;
+  z-index: 100;
+
+}
+
+
+.fourth-row-footer-section p:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+/* Styling the  fifth row */
+
+.fifth-row-footer-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #131A22;
+  color: #f1f1f1;
+  padding: 3em 0;
+}
+
+.fifth-row-inner-blocks h3{
+  z-index: 100;
+font-size: 0.8em;
+font-weight: 300;
+
+}
+
+.fifth-row-inner-blocks h3:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.fifth-row-inner-blocks p{
+  font-size: 0.7em;
+  color: #f1f1f1a6;
+  z-index: 100;
+
+}
+
+.fifth-row-inner-blocks p:hover{
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+
+/* styling the sixth div */
+
+
+.sixth-row-footer-section{
+  width: 100%;
+  height: 7vw;
+  gap: 0.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #131A22;
+  color: #E3E6E6;
+}
+
+
+.row-sixth-row-footer-section{
+  display: flex;
+  gap: 1.4em;
+}
+.row-sixth-row-footer-section p{
+  font-size: 0.8em;
+  z-index: 100;
+}
+
+.row-sixth-row-footer-section p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+
+
+}
